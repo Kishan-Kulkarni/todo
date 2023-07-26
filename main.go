@@ -14,7 +14,7 @@ import (
 
 func main() {
 	args := os.Args
-	err := godotenv.Load()
+	err := godotenv.Load() //Create the .env file and provide its absolute path as the function input
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
